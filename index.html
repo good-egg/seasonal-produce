@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <meta charset="UTF-8">
+        <title>Good Egg | What produce is in season?</title>
+        <meta name="description"
+            content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="app.css" rel="stylesheet"></head>
+
+    <body>
+        <div id="wrapper" role="main">
+        	<div class="seasonal-veg--container">
+        		<h1>Seasonal Produce</h1>
+        		<div class="user-input-container">
+        			<div class="dropdown-container dropdown-container--months">
+        			    <label for="month-select">Choose a month:</label>
+        			    <select name="months" id="month-select">
+        			        <option value="" selected="selected" disabled hidden=true>--Please choose an option--</option>
+        			        <option value="all">All months</option>
+        			        <option value="jan">January</option>
+        			        <option value="feb">February</option>
+        			        <option value="mar">March</option>
+        			        <option value="apr">April</option>
+        			        <option value="may">May</option>
+        			        <option value="jun">June</option>
+        			        <option value="jul">July</option>
+        			        <option value="aug">August</option>
+        			        <option value="sep">September</option>
+        			        <option value="oct">October</option>
+        			        <option value="nov">November</option>
+        			        <option value="dec">December</option>
+        			    </select>
+        			</div>
+        			<div class="dropdown-container dropdown-container--food">
+        			    <label for="food-select">Which food would you like?</label>
+        			    <select name="food" id="food-select">
+        			        <option value="" selected="selected" disabled hidden=true>--Please choose an option--</option>
+        			    </select>
+        			</div>		</div>
+        		<div class="results-container" style="display: none;">
+        			<div class="results-container">
+        			    <div class="food-carousel">
+        			        <div class="food-carousel__input">
+        			            <button class="previous previous-food food-carousel__btn button--directional"><span class="off-screen">Previous food</span><img src="../../assets/img/icons/left-chevron.svg" alt="previous icon"></button>
+        			            <button class="next next-food food-carousel__btn button--directional"><span class="off-screen">Next food</span><img src="../../assets/img/icons/right-chevron.svg" alt="next icon"></button>
+        			            <div class="image-container">
+        			                <img alt="" class="food-image" src="./assets/img/carrots.svg" />
+        			                <img src="./assets/img/shadow.png" class="shadow">
+        			            </div>
+        			        </div>
+        			        <p>Take a look below to see when I'm in season</p>
+        			        <div class="season-calendar--key">
+        			            <span class="key-el key-el--season"><span class="season--icon"><svg height="20" width="20">
+        			                <circle cx="10" cy="10" r="6" fill="#067253" />
+        			            </svg></span>In season</span>
+        			            <span class="key-el key-el--available"><span class="season--icon"><svg height="20" width="20">
+        			                <circle cx="10" cy="10" r="6" fill="#06BF8E" />
+        			            </svg></span>Going in/out of season</span>
+        			            <span class="key-el key-el--in-store"><span class="season--icon"><svg height="20" width="20">
+        			                <circle cx="10" cy="10" r="6" fill="#AAD6C4" />
+        			            </svg></span>Last of seasonal stock</span>
+        			        </div>
+        			        <div class="season-calendar--table">
+        			            <table>
+        			                <thead>
+        			                    <tr>
+        			                        <th>J</th>
+        			                        <th>F</th>
+        			                        <th>M</th>
+        			                        <th>A</th>
+        			                        <th>M</th>
+        			                        <th>J</th>
+        			                        <th>J</th>
+        			                        <th>A</th>
+        			                        <th>S</th>
+        			                        <th>O</th>
+        			                        <th>N</th>
+        			                        <th>D</th>
+        			                    </tr>
+        			                </thead>
+        			                <tbody>
+        			                    <tr>
+        			                            <td>
+        			                                <svg class="season-calendar--table_icon" height="20" width="20">
+        			                                    <circle cx="10" cy="10" r="6" stroke="black" stroke-width="1" fill="white" />
+        			                                </svg>
+        			                            </td>
+        			                            <td>
+        			                                <svg class="season-calendar--table_icon" height="20" width="20">
+        			                                    <circle cx="10" cy="10" r="6" stroke="black" stroke-width="1" fill="white" />
+        			                                </svg>
+        			                            </td>
+        			                            <td>
+        			                                <svg class="season-calendar--table_icon" height="20" width="20">
+        			                                    <circle cx="10" cy="10" r="6" stroke="black" stroke-width="1" fill="white" />
+        			                                </svg>
+        			                            </td>
+        			                            <td>
+        			                                <svg class="season-calendar--table_icon" height="20" width="20">
+        			                                    <circle cx="10" cy="10" r="6" stroke="black" stroke-width="1" fill="white" />
+        			                                </svg>
+        			                            </td>
+        			                            <td>
+        			                                <svg class="season-calendar--table_icon" height="20" width="20">
+        			                                    <circle cx="10" cy="10" r="6" stroke="black" stroke-width="1" fill="white" />
+        			                                </svg>
+        			                            </td>
+        			                            <td>
+        			                                <svg class="season-calendar--table_icon" height="20" width="20">
+        			                                    <circle cx="10" cy="10" r="6" stroke="black" stroke-width="1" fill="white" />
+        			                                </svg>
+        			                            </td>
+        			                            <td>
+        			                                <svg class="season-calendar--table_icon" height="20" width="20">
+        			                                    <circle cx="10" cy="10" r="6" stroke="black" stroke-width="1" fill="white" />
+        			                                </svg>
+        			                            </td>
+        			                            <td>
+        			                                <svg class="season-calendar--table_icon" height="20" width="20">
+        			                                    <circle cx="10" cy="10" r="6" stroke="black" stroke-width="1" fill="white" />
+        			                                </svg>
+        			                            </td>
+        			                            <td>
+        			                                <svg class="season-calendar--table_icon" height="20" width="20">
+        			                                    <circle cx="10" cy="10" r="6" stroke="black" stroke-width="1" fill="white" />
+        			                                </svg>
+        			                            </td>
+        			                            <td>
+        			                                <svg class="season-calendar--table_icon" height="20" width="20">
+        			                                    <circle cx="10" cy="10" r="6" stroke="black" stroke-width="1" fill="white" />
+        			                                </svg>
+        			                            </td>
+        			                            <td>
+        			                                <svg class="season-calendar--table_icon" height="20" width="20">
+        			                                    <circle cx="10" cy="10" r="6" stroke="black" stroke-width="1" fill="white" />
+        			                                </svg>
+        			                            </td>
+        			                            <td>
+        			                                <svg class="season-calendar--table_icon" height="20" width="20">
+        			                                    <circle cx="10" cy="10" r="6" stroke="black" stroke-width="1" fill="white" />
+        			                                </svg>
+        			                            </td>
+        			                    </tr>
+        			                </tbody>
+        			            </table>
+        			        </div>    </div>
+        			</div>			<hr />
+        			<h2>Recipes</h2>
+        			<div class="dropdown-container dropdown-container--diet">
+        			    <label for="food-select" class="offscreen">Select your diet</label>
+        			    <select name="food" id="food-select">
+        			        <option value="all">All diets</option>
+        			        <option value="veg">Vegetarian</option>
+        			    </select>
+        			</div>
+        			<div class="recipes-container">
+        			    <div class="recipe hide">
+        			        <img class="recipe--image" src="./assets/img/lazy-load.png">
+        			        <a href="#" class="recipe--link">
+        			            <h3 class="recipe--title">Recipe title</h3>
+        			        </a>
+        			        <span class="recipe--author">By author</span>
+        			        <div class="recipe--details">
+        			            <span class="recipe--course"></span>
+        			            <span class="recipe--prep"></span>
+        			            <span class="recipe--cook"></span>
+        			        </div>
+        			    </div>
+        			    <div class="recipe hide">
+        			        <img class="recipe--image" src="./assets/img/lazy-load.png">
+        			        <a href="#" class="recipe--link">
+        			            <h3 class="recipe--title">Recipe title</h3>
+        			        </a>
+        			        <span class="recipe--author">By author</span>
+        			        <div class="recipe--details">
+        			            <span class="recipe--course"></span>
+        			            <span class="recipe--prep"></span>
+        			            <span class="recipe--cook"></span>
+        			        </div>
+        			    </div>
+        			    <div class="recipe hide">
+        			        <img class="recipe--image" src="./assets/img/lazy-load.png">
+        			        <a href="#" class="recipe--link">
+        			            <h3 class="recipe--title">Recipe title</h3>
+        			        </a>
+        			        <span class="recipe--author">By author</span>
+        			        <div class="recipe--details">
+        			            <span class="recipe--course"></span>
+        			            <span class="recipe--prep"></span>
+        			            <span class="recipe--cook"></span>
+        			        </div>
+        			    </div>
+        			    <div class="recipe hide">
+        			        <img class="recipe--image" src="./assets/img/lazy-load.png">
+        			        <a href="#" class="recipe--link">
+        			            <h3 class="recipe--title">Recipe title</h3>
+        			        </a>
+        			        <span class="recipe--author">By author</span>
+        			        <div class="recipe--details">
+        			            <span class="recipe--course"></span>
+        			            <span class="recipe--prep"></span>
+        			            <span class="recipe--cook"></span>
+        			        </div>
+        			    </div>
+        			    <div class="recipe hide">
+        			        <img class="recipe--image" src="./assets/img/lazy-load.png">
+        			        <a href="#" class="recipe--link">
+        			            <h3 class="recipe--title">Recipe title</h3>
+        			        </a>
+        			        <span class="recipe--author">By author</span>
+        			        <div class="recipe--details">
+        			            <span class="recipe--course"></span>
+        			            <span class="recipe--prep"></span>
+        			            <span class="recipe--cook"></span>
+        			        </div>
+        			    </div>
+        			    <div class="recipe--navigation">
+        			        <button class="previous previous-recipe button--directional"><span class="off-screen">Previous recipe</span><img
+        			                src="../../assets/img/icons/left-chevron.svg" alt="previous icon"></button>
+        			        <button class="next next-recipe button--directional"><span class="off-screen">Next recipe</span><img
+        			                src="../../assets/img/icons/right-chevron.svg" alt="next icon"></button>
+        			        <span class="recipe-counter"><span class="recipe-counter__current">1</span>/<span
+        			                class="recipe-counter__total">10</span></span>
+        			    </div>
+        			</div>
+        			
+        		</div>
+        	</div>
+        </div>
+        
+    <script type="text/javascript" src="bundle.js"></script></body>
+    <footer>
+        <p id="copyright">&copy; Good Egg 2021</p>
+    </footer>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-76578425-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</html>
