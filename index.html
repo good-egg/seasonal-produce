@@ -9,8 +9,13 @@
     <link href="app.css" rel="stylesheet"></head>
 
     <body>
-        <div id="wrapper" role="main">
-        	<div class="seasonal-veg--container">
+        
+        <div id="wrapper" clss="wrapper" role="main">
+        	<button role="switch" aria-checked="false" id=disco-toggle class="switch switch--disco-toggle">
+        	    <span>off</span>
+        	    <span>on</span>
+        	</button>
+        	<label for=disco-toggle class="switch">Disco Mode</label>	<div class="seasonal-veg--container">
         		<h1>Seasonal Produce</h1>
         		<div class="user-input-container">
         			<div class="dropdown-container dropdown-container--months">
@@ -45,7 +50,7 @@
         			            <button class="previous previous-food food-carousel__btn button--directional"><span class="off-screen">Previous food</span><img src="./assets/img/icons/left-chevron.svg" alt="previous icon"></button>
         			            <button class="next next-food food-carousel__btn button--directional"><span class="off-screen">Next food</span><img src="./assets/img/icons/right-chevron.svg" alt="next icon"></button>
         			            <div class="image-container">
-        			                <img alt="" class="food-image" src="./assets/img/carrots.svg" />
+        			                <div class="food-image"><img alt="" src="./assets/img/carrots.svg" /></div>
         			                <img src="./assets/img/shadow.png" class="shadow">
         			            </div>
         			        </div>
@@ -228,7 +233,7 @@
         		</div>
         	</div>
         </div>
-        
+        <div class="disco-underlay"></div>
     <script type="text/javascript" src="bundle.js"></script></body>
     <footer>
         <p id="copyright">&copy; Good Egg 2021</p>
